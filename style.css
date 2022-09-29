@@ -1,0 +1,374 @@
+body,h1,h2,h3,h4,h5,h5,p,a,span,ul,li{
+    font-family: 'League Spartan', sans-serif;
+}
+/* Header CSS Start  */
+header{
+    background: #e7e6e6;
+}
+header a img {
+    width: 100px;
+    position: relative;
+    margin-bottom: -5px;
+}
+header ul{
+    list-style: none;
+    margin: 0;
+}
+header ul li{
+    position: relative;
+    display: inline-block
+}
+header ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 18px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    line-height: 64px;
+    z-index: 1;
+}
+header ul li:nth-child(1) a{
+    color: blue;
+    position: relative;
+}
+header ul li:nth-child(1) a::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: blue;
+}
+header ul ul li:nth-child(1) a::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: transparent;
+}
+header ul li a::before{
+    content: "";
+    position: absolute;
+    bottom:-1px;
+    left: 10%;
+    width: 0;
+    height: 2px;
+    background: blue;
+    transition: 0.3s;
+}
+header ul ul li a:hover::before{
+   width: 0;
+}
+header ul li a:hover{
+    color: blue;
+}
+header ul li a:hover::before{
+    width: 80%;
+}
+header ul li ul {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 194px;
+    height: auto;
+    background: blue;
+    padding: 0;
+    border: 18px solid rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+header ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+header ul li ul li a{
+    display: block;
+    color: #fff !important;
+}
+.header-btn{
+    display: flex;
+}
+.header-btn a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: blue;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.header-btn a:hover{
+    color: #fff;
+}
+.header-btn a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #7769f9 ;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+.header-btn a:hover::after{
+    width: 100%;
+}
+/* Header CSS End  */
+/* Banner CSS Start  */
+.banner{
+    background: #edf6ff;
+    overflow: hidden;
+    position: relative;
+    padding: 176px;
+    z-index: -1;
+}
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.banner-content p {
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+.banner-content .banner-btn {
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    background: blue;
+    color: #fff;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.banner-content .banner-btn:hover{
+    background: #fff;
+    color: blue;
+}
+
+.banner-img img {
+  position: absolute;
+  top: -144px;
+  right: -130px;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+}
+/* Banner CSS End  */
+/* Service CSS Start  */
+.service{
+    position: relative;
+}
+.service .service-content{
+
+}
+.service .service-content h5 {
+	font-weight: 300;
+	color: blue;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.service .service-content h1 {
+	width: 53%;
+	margin: 20px 0px;
+    position: relative;
+}
+.service .service-content h1::after{
+    content: "";
+    position: absolute;
+    bottom:-4px;
+    left: 0;
+    width: 10%;
+    height: 3px;
+    background: blue;
+}
+.service .service-content p {
+	width: 40%;
+	font-size: 19px;
+	font-weight: 300;
+    margin-bottom: 60px;
+    margin-top: 25px;
+}
+.servicee {
+    background-image: url("./Image/service-patern.png");
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 23px;
+    left: 119px;
+    z-index: -1;
+}
+.service-items{
+    background: #f9fcff;
+    padding: 20px;
+    transition: all 0.5s;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.service-items h4 {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 30px;
+    transition: all 0.5s;
+}
+.service-items:hover h4{
+    color: #fff;
+
+}
+.service-items:hover{
+    background: blue;
+}
+.service-items span {
+    height: 90px;
+    width: 90px;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50px 50px 50px 0;
+    position: relative;
+    transition: all 0.5s;
+}
+.service-items:hover span{
+    background: #fff !important;
+    color: blue;
+   
+}
+.service-items span::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 27%;
+    height: 3px;
+    background: blue;
+    transition: all 0.5s;
+}
+.service-items:hover span::after {
+    width: 40%;
+    background: #fff !important;
+}
+.service-items p {
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 30px;
+    transition: all 0.5s;
+}
+.service-items:hover p{
+    color: #fff;
+}
+/* Service  CSS End  */
+/* Play  CSS End  */
+.play {
+    background: linear-gradient(rgba(46,63,158,0.500), rgba(46,63,158,0.500)) ,url("./Image/video-bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.play h5 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.play h1 {
+    margin-bottom: 20px;
+    position: relative;
+}
+.play h1::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 45%;
+    width: 10%;
+    height: 3px;
+    background: #fff;
+}
+.play p {
+    width: 45%;
+    margin: auto;
+    font-size: 17px;
+}
+.icon-play {
+    height: 90px;
+    width: 90px;
+    background: #fff;
+    color: blue;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+.icon-play::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: mukul 2s linear infinite;
+}
+.icon-play::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 90px;
+    width: 90px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: mukul 2s linear infinite;
+}
+
+@keyframes mukul {
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.2);
+        opacity: 0.4;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: 0.6;
+    }
+    75%{
+        transform: scale(1.6);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+/* Play  CSS End  */
