@@ -83,6 +83,7 @@ header ul li ul {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+    z-index: 99;
 }
 header ul li:hover ul{
     visibility: visible;
@@ -96,7 +97,7 @@ header ul li ul li a{
 .header-btn{
     display: flex;
 }
-.header-btn a {
+.header-btn a.btn-1 {
     display: inline-block;
     text-decoration: none;
     font-size: 17px;
@@ -110,7 +111,7 @@ header ul li ul li a{
     z-index: 1;
     overflow: hidden;
 }
-.header-btn a:hover{
+.header-btn a.btn-1:hover{
     color: #fff;
 }
 .header-btn a::after{
@@ -135,28 +136,28 @@ header ul li ul li a{
     overflow: hidden;
     position: relative;
     padding: 176px;
-    z-index: -1;
+    
 }
 .banner-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 50px;
 }
 .banner-content p {
     font-size: 20px;
     margin-bottom: 26px;
 }
-.banner-content .banner-btn {
+a.banner-btn {
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
-    background: blue;
+    background: red;
     color: #fff;
     padding: 13px 30px;
     border-radius: 30px;
     transition: 0.3s;
 }
-.banner-content .banner-btn:hover{
-    background: #fff;
+a.banner-btn:hover{
+    background-color: #fff;
     color: blue;
 }
 
@@ -208,8 +209,8 @@ header ul li ul li a{
     width: 300px;
     height: 300px;
     position: absolute;
-    bottom: 23px;
-    left: 119px;
+    bottom: 36px;
+    left: 55px;
     z-index: -1;
 }
 .service-items{
