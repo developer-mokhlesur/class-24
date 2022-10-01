@@ -219,6 +219,7 @@ a.banner-btn:hover{
     transition: all 0.5s;
     margin-bottom: 50px;
     z-index: 1;
+    transform: scale(1);
 }
 .service-items h4 {
 	font-size: 22px;
@@ -232,6 +233,7 @@ a.banner-btn:hover{
 }
 .service-items:hover{
     background: blue;
+    transform: scale(1.1);
 }
 .service-items span {
     height: 90px;
